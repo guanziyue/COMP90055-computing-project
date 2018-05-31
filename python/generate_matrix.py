@@ -33,7 +33,7 @@ f.write('feature sequence is showed above')
 f.write('\r\n')
 print('features written')
 # connect database
-db = pymysql.connect(host="115.146.84.182", port=3306, password='allenguan01', user='root', db='project',
+db = pymysql.connect(host="115.146.84.182", port=3306, password='**********', user='root', db='project',
                      cursorclass=pymysql.cursors.DictCursor)
 print('successful connection')
 cursor = db.cursor()

@@ -15,7 +15,7 @@ public class Parsing
 		static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 		static final String DB_URL = "jdbc:mysql://localhost:3306/project?characterEncoding=utf8&useSSL=true";
 		static final String USER = "root";
-		static final String PASS = "allenguan01";
+		static final String PASS = "**********";
 
 		public static void main(String[] args)
 			{

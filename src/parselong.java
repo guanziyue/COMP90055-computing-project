@@ -19,7 +19,7 @@ public class parselong
 		static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 		static final String DB_URL = "jdbc:mysql://115.146.84.182:3306/LSTM?characterEncoding=utf8&useSSL=true";
 		static final String USER = "root";
-		static final String PASS = "allenguan01";
+		static final String PASS = "**********";
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		static final int stationID=10239;
 		public static void main(String[] args)

@@ -10,7 +10,7 @@ public class parsingcitizendata
 		static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 		static final String DB_URL = "jdbc:mysql://localhost:3306/project?characterEncoding=utf8&useSSL=true";
 		static final String USER = "root";
-		static final String PASS = "allenguan01";
+		static final String PASS = "**********";
         static final String filename="citizenairset/data349605631791785422.csv";
         final static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		public static void main(String[] args)

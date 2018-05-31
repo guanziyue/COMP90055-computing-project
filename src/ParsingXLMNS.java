@@ -19,7 +19,7 @@ public class ParsingXLMNS
 		static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 		static final String DB_URL = "jdbc:mysql://115.146.84.182:3306/project?characterEncoding=utf8&useSSL=true";
 		static final String USER = "root";
-		static final String PASS = "allenguan01";
+		static final String PASS = "**********";
 
 		public static void main(String[] args)
 			{
