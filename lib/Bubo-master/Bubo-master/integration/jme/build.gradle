@@ -1,0 +1,40 @@
+repositories {
+
+}
+
+dependencies {
+    compile project(':core')
+    compile project(':io')
+    compile project(':gui')
+
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+// gradle -PlocationJme=/path/to/jme  copyFromJme
+task copyFromJme() {
+
+    if (project.hasProperty('locationJme')) {
+        if( !file(locationJme).exists() || !file(locationJme+"/jmonkeyplatform").exists() ) {
+            println "Can't find JME directory at "+locationJme
+        } else {
+            println "file = $locationJme"
+
+            file('libs').deleteDir()
+            file('libs').mkdir()
+
+            doLast {
+                copy {
+                    from fileTree(dir: "$locationJme/jmonkeyplatform/libs", include: '*.jar')
+                    into 'libs'
+                }
+            }
+        }
+    }
+}
+
+
+idea {
+    module {
+        name = "BUBO JME"
+    }
+}
